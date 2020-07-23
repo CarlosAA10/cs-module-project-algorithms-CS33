@@ -5,7 +5,38 @@ Returns: a List of integers
 def moving_zeroes(arr):
     # Your code here
 
-    pass
+    swaps = True
+
+    while swaps:
+
+        swaps = False 
+
+        for i in range(len(arr) - 1):
+
+            if arr[i] is 0 and arr[i + 1] is not 0:
+                arr[i], arr[i + 1] = arr[i + 1], arr[i]
+                swaps = True
+            
+    
+
+    
+    # for i in range(len(arr) - 1):
+
+    #     swaps = True
+
+    #     while swaps:
+    #         swaps = False
+
+    #         if arr[i] is 0 and arr[i + 1] is not 0:
+    #             arr[i], arr[i + 1] = arr[i + 1], arr[i]
+    #             swaps = True
+        
+    
+    return arr
+
+arr = [0,1,0]
+
+print(moving_zeroes(arr))
 
 
 if __name__ == '__main__':
