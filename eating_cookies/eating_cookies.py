@@ -2,6 +2,8 @@
 Input: an integer
 Returns: an integer
 '''
+# fibonacci sequence in disguise
+
 def eating_cookies(n):
     # Your code here
 
